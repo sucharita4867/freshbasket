@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -42,10 +43,11 @@ const Navbar = () => {
     <nav className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* লোগো সেকশন */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="text-2xl font-bold text-green-600">
-              FreshBasket
+              {/* <Image src="/Logo.png" alt="heart" width={20} height={20} />
+              FreshBasket */}
+              <Logo />
             </Link>
           </div>
 
@@ -81,7 +83,6 @@ const Navbar = () => {
               Sign in
             </Link>
 
-            {/* মোবাইল মেনু বাটন (daisyUI dropdown) */}
             <div className="lg:hidden dropdown dropdown-end">
               <div tabIndex={0} role="button" className="btn btn-ghost">
                 <svg
