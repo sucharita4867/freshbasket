@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="">
           <div className="">
             <Logo />
-            </div>
+          </div>
           <div className=" mt-14">
             <p className="font-medium text-xl text-primary">Download App:</p>
             <div className="flex justify-center mt-2 items-center gap-2">
