@@ -4,13 +4,16 @@ import { IoLocationOutline } from "react-icons/io5";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import Image from "next/image";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
     <div className="">
       <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-12">
         <div className="">
-          <div className="">{/* <Logo /> */}</div>
+          <div className="">
+            <Logo />
+            </div>
           <div className=" mt-14">
             <p className="font-medium text-xl text-primary">Download App:</p>
             <div className="flex justify-center mt-2 items-center gap-2">
