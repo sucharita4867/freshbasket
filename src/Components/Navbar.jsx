@@ -45,20 +45,17 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="text-2xl font-bold text-green-600">
-              {/* <Image src="/Logo.png" alt="heart" width={20} height={20} />
-              FreshBasket */}
               <Logo />
             </Link>
           </div>
 
-          {/* মাঝখানের মেনু (Desktop) */}
           <div className="hidden lg:flex items-center space-x-8">
             <ul className="flex space-x-8 text-lg font-medium list-none">
               {links}
             </ul>
           </div>
 
-          {/* ডানদিকের সেকশন (Favorites, Cart, Sign in) */}
+          {/* (Favorites, Cart, Sign in) */}
           <div className="flex items-center space-x-6">
             <div className="hidden sm:flex items-center space-x-4 text-gray-700 font-medium">
               <div className="flex items-center space-x-1 cursor-pointer hover:text-green-600">
