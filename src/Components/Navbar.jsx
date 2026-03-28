@@ -11,8 +11,8 @@ const Navbar = () => {
 
   const getNavClass = (path) =>
     pathname === path
-      ? "text-green-600 font-bold border-b-2 border-green-600 pb-1"
-      : "text-gray-700 hover:text-green-600 transition-all";
+      ? "text-[#6f9b41] font-bold border-b-2 border-[#6f9b41] pb-1"
+      : "text-gray-700 hover:text-[#6f9b41] transition-all";
 
   const links = (
     <>
