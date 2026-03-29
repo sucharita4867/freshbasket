@@ -59,12 +59,19 @@ const Navbar = () => {
           <div className="flex items-center space-x-6">
             <div className="hidden sm:flex items-center space-x-4 text-gray-700 font-medium">
               <div className="flex items-center space-x-1 cursor-pointer hover:text-green-600">
-                <Image src="/Heart.png" alt="heart" width={20} height={20} />
+                <Image
+                  className="text-[#6f9b41]"
+                  src="/Heart.png"
+                  alt="heart"
+                  width={20}
+                  height={20}
+                />
                 <span>Favorites</span>
               </div>
               <div className="flex items-center space-x-1 cursor-pointer hover:text-green-600">
                 <Image
-                  src="/shopping-cart.png"
+                  className="text-[#6f9b41]"
+                  src="/Shopping-cart.png"
                   alt="cart"
                   width={20}
                   height={20}
