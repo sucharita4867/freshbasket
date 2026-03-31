@@ -6,17 +6,19 @@ const Banner = () => {
     <div className="relative w-full h-[700px] overflow-hidden">
       {/* Background Images */}
       <Image
-        src="/Bg.png"
+        src="/b-g.png"
         alt="background"
         width={100}
         height={100}
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
       />
-      {/* <img
-        src={bg2}
+      <Image
+        src="/bg-(1).png"
         alt="green background"
+        width={100}
+        height={100}
         className="absolute top-0 right-0 h-full w-auto object-cover -z-10"
-      /> */}
+      />
 
       {/* Main Content Container */}
       <div className="max-w-7xl mx-auto h-full px-10 flex flex-col lg:flex-row items-center justify-between relative z-10">
