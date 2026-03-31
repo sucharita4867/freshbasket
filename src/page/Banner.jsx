@@ -1,53 +1,72 @@
-import Image from "next/image";
+"use client";
+
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-[700px] overflow-hidden">
-      {/* Background Images */}
-      <Image
-        src="/b-g.png"
-        alt="background"
-        width={100}
-        height={100}
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-      />
-      <Image
-        src="/bg-(1).png"
-        alt="green background"
-        width={100}
-        height={100}
-        className="absolute top-0 right-0 h-full w-auto object-cover -z-10"
-      />
+    <div className="relative w-full h-[80vh] bg-green-50 overflow-hidden">
+      
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/b-g.png" 
+          alt="background design"
+          fill
+          className="object-cover opacity-60"
+          priority
+        // <Image
+        //   src="/bg-(1).png" 
+        //   alt="background design"
+        //   fill
+        //   className="object-contain opacity-40 scale-125"
+        // />
+      </div>
 
-      {/* Main Content Container */}
-      <div className="max-w-7xl mx-auto h-full px-10 flex flex-col lg:flex-row items-center justify-between relative z-10">
-        <div className="lg:w-1/2 mt-32 lg:mt-0 text-left">
-          <p className="text-[#749B3F] text-lg font-medium bg-[#749B3F1A] inline-block px-4 py-1 rounded-lg mb-4">
-            Welcome to Fresh Harvest
+      <div className="max-w-7xl mx-auto px-4 h-full flex flex-col-reverse lg:flex-row items-center justify-between relative z-10 py-10 lg:py-0">
+        
+        <div className="lg:w-1/2 text-center lg:text-left space-y-6 mt-8 lg:mt-0">
+          <p className="text-secondary font-bold text-xl md:text-2xl tracking-wide">
+            Best Produce in Town
           </p>
-          <h1 className="text-4xl lg:text-6xl font-bold text-primary leading-tight">
-            Fresh Fruits and <br />
-            <span className="text-primary">Vegetables</span>
+          
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-green-700 leading-tight">
+            Fresh Harvests <br /> 
+            <span className="text-primary">Delivered</span> to <br /> 
+            Your Door
           </h1>
-          <p className="text-secondary mt-4 max-w-md">
-            At Fresh Harvests, we are passionate about providing you with the
-            freshest and most flavorful fruits and vegetables.
+          
+          <p className="max-w-xl mx-auto lg:mx-0 text-gray-700 text-lg leading-relaxed">
+            Discover the best local fruits and vegetables, picked at the peak of freshness. Your journey to healthy eating starts here at **FreshBasket**.
           </p>
-          <button className="btn bg-[#ff6a19] hover:bg-[#e85a24] text-white border-none mt-8 px-8">
-            Shop Now
-          </button>
-          {/* <img src={aro} alt="" /> */}
+          
+          <div className="flex gap-4 items-center justify-center lg:justify-start pt-4">
+            <Link href="/shop" className="btn bg-green-600 text-white border-none px-8 py-3 rounded-full font-bold hover:bg-green-700 transition-all text-lg shadow-md">
+              Shop Now
+            </Link>
+            <Link href="/about" className="btn btn-ghost text-secondary hover:bg-transparent font-semibold gap-2">
+              Learn More 
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
 
-        <div className="lg:w-1/2 h-full flex items-end justify-center relative">
-          {/* <img
-            className="h-[90%] w-auto object-contain z-20"
-            src={img}
+        <div className="lg:w-1/2 flex items-center justify-center lg:justify-end h-full">
+          
+          <Image
+            src="/bannerImg.png" 
             alt="Girl with vegetables"
-          /> */}
+            width={550} 
+            height={650}
+            className="h-[75%] lg:h-[90%] w-auto object-contain z-20"
+            priority
+          />
         </div>
       </div>
+
+      <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white to-transparent z-10"></div>
     </div>
   );
 };
