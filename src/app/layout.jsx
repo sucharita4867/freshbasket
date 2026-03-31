@@ -24,8 +24,13 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full`}
     >
-      <body className="min-h-full flex flex-col" suppressHydrationWarning>
-        <Navbar />
+      <body
+        className="min-h-full relative flex flex-col"
+        suppressHydrationWarning
+      >
+        <div className="absolute top-0 left-0 w-full z-50">
+          <Navbar />
+        </div>
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>
