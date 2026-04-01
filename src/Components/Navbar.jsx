@@ -55,7 +55,6 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* (Favorites, Cart, Sign in) */}
           <div className="flex items-center space-x-6">
             <div className="hidden sm:flex items-center space-x-4 text-gray-700 font-medium">
               <div className="flex items-center space-x-1 cursor-pointer hover:text-green-600">
