@@ -28,9 +28,9 @@ export default function RootLayout({ children }) {
         className="min-h-full relative flex flex-col"
         suppressHydrationWarning
       >
-        <div className="absolute top-0 left-0 w-full z-50">
+        <header className="absolute top-0 left-0 w-full z-50">
           <Navbar />
-        </div>
+        </header>
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>
