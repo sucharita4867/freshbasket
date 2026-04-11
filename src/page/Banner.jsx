@@ -6,10 +6,10 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-[600px] flex items-center overflow-hidden">
+    <div className="relative w-full border border-red-600 h-[600px] flex items-center overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/b-g.png" // Apnar public folder-e thaka file
+          src="/b-g.png"
           alt="Banner Background"
           fill
           className="object-cover"
@@ -17,7 +17,6 @@ const Banner = () => {
         />
       </div>
 
-      {/* Background Image 2 (Jodi thake) */}
       <div className="absolute top-0 right-0 -z-10 w-1/2 h-full">
         <Image
           src="/bg-(1).png"
@@ -27,7 +26,7 @@ const Banner = () => {
         />
       </div>
 
-      {/* <div className="max-w-7xl mx-auto px-4 h-full flex flex-col-reverse lg:flex-row items-center justify-between relative z-10 py-10 lg:py-0">
+      <div className=" px-4 h-full flex flex-col-reverse lg:flex-row items-center justify-between relative z-10 py-10 lg:py-0">
         <div className="lg:w-1/2 text-center lg:text-left space-y-6 mt-8 lg:mt-0">
           <p className="text-secondary font-bold text-xl md:text-2xl tracking-wide">
             Best Produce in Town
@@ -85,7 +84,7 @@ const Banner = () => {
             priority
           />
         </div>
-      </div> */}
+      </div>
 
       <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white to-transparent z-10"></div>
     </div>
