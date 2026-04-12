@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="relative w-full  h-[600px] flex items-center overflow-hidden">
+    <div className="relative w-full border border-red-600 h-[600px] flex items-center overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <Image
           src="/b-g.png"
